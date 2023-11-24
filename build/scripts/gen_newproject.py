@@ -265,6 +265,7 @@ def cli(projectname, board, projectdir, templateapp):
     comp_info = check_project_name(projectname)
 
     aos_sdk = os.environ.get("AOS_SDK_PATH")
+    templatedir=None
     if templateapp:
         if templateapp in comp_info:
             templatedir = comp_info[templateapp]["location"]
